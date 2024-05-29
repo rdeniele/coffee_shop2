@@ -7,9 +7,9 @@ use App\Http\Controllers\Add_onController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\OrdersController;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 // Customer CRUD
 Route::get('/customer', [CustomerController::class, 'index'])->name('customer.index');

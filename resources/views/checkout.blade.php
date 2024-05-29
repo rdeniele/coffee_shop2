@@ -1,16 +1,25 @@
+@extends('layout')
+@section('content')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        @vite('resources/css/app.css')
     <title>Checkout</title>
 </head>
-<body>
-    <h1>Checkout</h1>
+
+
+<body class="mx-24">
+
+    <nav class="mb-4 font-bold text-4xl text-neutral-600">KANOKANO</nav>
+    <hr class="mb-8">
+    <p class="text-3xl font-bold">Checkout</p>
     
     <div>
         <h2>Order Summary</h2>
-        <table>
+        <table class="auto">
             <thead>
                 <tr>
                     <th>Product</th>
@@ -69,3 +78,6 @@
     <p class="btn-holder"><a href="{{url('/products')}}" role="button">Go Back</a> </p>
 </body>
 </html>
+
+
+@endsection
